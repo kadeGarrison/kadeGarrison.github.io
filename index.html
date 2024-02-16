@@ -4,67 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav {
-            display:flex;
-            background-color: #333;
-            color:white;
-            align-items: center;
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        div {
-            font-size:24px;
-        }
-       ul {
-            display:flex;
-            list-style-type: none;
-        }
-        li {
-            padding-left:10px;
-            padding-right:10px;
-            transition: background-color 0.3s linear;
-            border-radius: 10px;
-        }
-        li:hover {
-            background-color: rgb(91, 86, 86);
-        }
-        a {
-            text-decoration: none;
-            color:white
-        }
-        @media (max-width: 600px) {
-            nav {
-                display:flex;
-                flex-direction: column;   
-            }
-            ul {
-                display: flex;
-                flex-direction: column;
-                padding-right:100px;  
-            }
-            li {
-                padding-top:10px;
-                padding-bottom:10px;    
-            }   
-        }
-    </style>
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="projectstyle.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <div>
-                Logo
+            <div class = "navLogo">
+                Home Page
             </div>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li class = "active"><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="services.html">Blog</a></li>
+                <li><a href="Contact.html">Temp</a></li>
             </ul>
         </nav>
+        <section>
+            <img src="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/appdo.jpg" 
+            alt="Funny Web App Meme" class = "meme">
+            <div class = "homeLogo">
+                Hi There!
+            </div> 
+            <div id = "homePageDesc">
+                My name is Kade Garrison.
+                So far the webpage is coming along,
+                this will end up being a description 
+                about me and for the time being this 
+                text is just a placeholder. 
+
+                <br>
+
+                (Psssst! Hover over the image and it'll dance a little)
+            </div>
+        </section>
+        <article class = "hpFunLinks">
+            <div class = "funLinksHead">
+            Here are some more fun links
+            that tell you a 
+            little about me
+            </div>
+
+            <ul>
+                <li>This <a href = "https://www.siena.edu/" style = "color:black" class = "funLink">LINK</a> leads to my college's website!</li>
+                <br>
+                <li>This <a href = "https://en.wikipedia.org/wiki/Computer_science" style = "color:black" class = "funLink">LINK</a> leads to a wikipedia page about my major!</li>
+            </ul>
+        </article>
     </header>
 </body>
 </html>

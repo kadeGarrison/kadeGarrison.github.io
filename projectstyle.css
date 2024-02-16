@@ -1,0 +1,96 @@
+nav {
+    display:flex;
+    background-color: #333;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navLogo {
+    font-size:24px;
+}
+nav ul {
+    display:flex;
+    list-style-type: none;
+}
+nav li {
+    padding-left:8px;
+    padding-right:8px;
+    transition: background-color 0.3s linear;
+    border-radius: 10px;
+}
+.active {
+    background-color: rgb(90, 9, 9);
+}
+nav li:hover {
+    background-color: rgb(91, 86, 86);
+}
+a {
+    text-decoration: none;
+    color:white
+}
+section{ 
+    display:flex;
+    background-color: lightgray;
+    flex-direction: column;
+    color:black;
+    padding:30px;
+}
+.meme {
+    position: absolute;
+    top:270px;
+    right:70px;
+    
+}
+.homeLogo {
+    font-size: 50px;
+}
+#homePageDesc {
+    padding-top:20px;
+    font-size:18px;
+}
+.hpFunLinks {
+    padding:50px;
+}
+.funLinksHead {
+    text-decoration: underline dotted;
+    font-size:18px;
+}
+.funLink {
+    transition: background-color 0.3s linear;
+    border-radius: 8px;
+    padding:3px;
+    text-decoration: underline;
+}
+.funLink:hover {
+    background-color: rgb(198, 210, 157);
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    50% { transform: rotate(6deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.meme:hover {
+    animation: wiggle 2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display:flex;
+        flex-direction: column;   
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-right:120px;  
+    }
+    li {
+        padding-top:10px;
+        padding-bottom:10px;    
+    }   
+}
