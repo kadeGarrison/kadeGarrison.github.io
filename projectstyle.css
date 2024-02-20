@@ -9,6 +9,7 @@ nav {
 }
 .navLogo {
     font-size:24px;
+    animation: vibrate 0.001s infinite;
 }
 nav ul {
     display:flex;
@@ -74,8 +75,38 @@ section{
     100% { transform: rotate(0deg); }
 }
 
+@keyframes vibrate {
+    0% {transform: translate(0px,1px); }
+    50% { transform: translate(0px,-2px); }
+    100% { transform: translate(0px,1px); }
+}
+
 .meme:hover {
     animation: wiggle 2s ease-in-out;
+}
+.mydog {
+    position: absolute;
+    bottom:30px;
+    left:30px;
+    width:380px;
+}
+.me {
+    position: absolute;
+    bottom:30px;
+    left:435px;
+    width:380px;
+}
+.him {
+    position: absolute;
+    bottom:30px;
+    right:30px;
+    width:170px;
+}
+.moreDog {
+    position: absolute;
+    bottom:30px;
+    left:840px;
+    width:380px;
 }
 
 @media (max-width: 600px) {
