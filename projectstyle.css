@@ -81,6 +81,22 @@ section{
     100% { transform: translate(0px,1px); }
 }
 
+@keyframes bounce {
+    0% {transform: scale(100%);}
+    25% {transform: scale(105%);}
+    50% {transform: scale(100%);}
+    75% {transform: scale(95%);}
+    100% {transform: scale(100%);}
+}
+
+@keyframes threeSixty {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }  
+}
+
 .meme:hover {
     animation: wiggle 2s ease-in-out;
 }
@@ -90,23 +106,41 @@ section{
     left:30px;
     width:380px;
 }
+.mydog:hover {
+    animation: bounce 0.5s linear;
+    animation-iteration-count: 2;
+}
+
 .me {
     position: absolute;
     bottom:30px;
     left:435px;
     width:380px;
 }
+.me:hover {
+    animation: wiggle 0.8s ease-in-out;
+    
+}
+
 .him {
     position: absolute;
     bottom:30px;
     right:30px;
     width:170px;
 }
+.him:hover {
+    animation: bounce 0.5s linear;
+    animation-iteration-count: 2;
+}
+
 .moreDog {
     position: absolute;
     bottom:30px;
     left:840px;
     width:380px;
+}
+.moreDog:hover {
+    animation: threeSixty 1s linear;
 }
 
 @media (max-width: 600px) {
