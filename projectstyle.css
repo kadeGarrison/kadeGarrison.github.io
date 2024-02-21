@@ -1,111 +1,178 @@
-nav {
-    display:flex;
+.topNav {
+    display: flex;
     background-color: #333;
-    color:white;
+    color: white;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .navLogo {
-    font-size:24px;
+    font-size: 24px;
     animation: vibrate 0.001s infinite;
 }
-nav ul {
-    display:flex;
+
+.topNav ul {
+    display: flex;
     list-style-type: none;
 }
-nav li {
-    padding-left:8px;
-    padding-right:8px;
+
+.topNav li {
+    padding-left: 8px;
+    padding-right: 8px;
     transition: background-color 0.3s linear;
     border-radius: 10px;
 }
+
 .active {
     background-color: rgb(90, 9, 9);
 }
-nav li:hover {
+
+.topNav li:hover {
     background-color: rgb(91, 86, 86);
 }
+
 a {
     text-decoration: none;
-    color:white
+    color: white
 }
-section{ 
-    display:flex;
+
+section {
+    display: flex;
     background-color: lightgray;
     flex-direction: column;
-    color:black;
-    padding:30px;
+    color: black;
+    padding: 30px;
 }
+
 .meme {
     position: absolute;
-    top:270px;
-    right:70px;
-    
+    top: 270px;
+    right: 70px;
+
 }
+
 .homeLogo {
     font-size: 50px;
 }
+
 #homePageDesc {
-    padding-top:20px;
-    font-size:18px;
+    padding-top: 20px;
+    font-size: 18px;
 }
+
 .hpFunLinks {
-    padding:50px;
+    padding: 50px;
+    font-size: 25px;
 }
+
 .funLinksHead {
-    font-size:18px;
+    font-size: 30px;
 }
+
 .funLink {
     transition: background-color 0.3s linear;
     border-radius: 8px;
-    padding:3px;
+    padding: 3px;
     text-decoration: underline;
 }
+
 .funLink:hover {
     background-color: rgb(198, 210, 157);
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-2deg); }
-    50% { transform: rotate(6deg); }
-    75% { transform: rotate(-2deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(6deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes vibrate {
-    0% {transform: translate(0px,1px); }
-    50% { transform: translate(0px,-2px); }
-    100% { transform: translate(0px,1px); }
+    0% {
+        transform: translate(0px, 1px);
+    }
+
+    50% {
+        transform: translate(0px, -2px);
+    }
+
+    100% {
+        transform: translate(0px, 1px);
+    }
 }
 
 @keyframes bounce {
-    0% {transform: scale(100%);}
-    25% {transform: scale(105%);}
-    50% {transform: scale(100%);}
-    75% {transform: scale(95%);}
-    100% {transform: scale(100%);}
+    0% {
+        transform: scale(100%);
+    }
+
+    25% {
+        transform: scale(105%);
+    }
+
+    50% {
+        transform: scale(100%);
+    }
+
+    75% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
 }
 
 @keyframes threeSixty {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(90deg); }
-    50% { transform: rotate(180deg); }
-    75% { transform: rotate(270deg); }
-    100% { transform: rotate(360deg); }  
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .meme:hover {
     animation: wiggle 2s ease-in-out;
 }
+
 .mydog {
     position: absolute;
-    bottom:30px;
-    left:30px;
-    width:380px;
+    bottom: 30px;
+    left: 30px;
+    width: 380px;
 }
+
 .mydog:hover {
     animation: bounce 0.5s linear;
     animation-iteration-count: 2;
@@ -113,21 +180,22 @@ section{
 
 .me {
     position: absolute;
-    bottom:30px;
-    left:435px;
-    width:380px;
+    bottom: 30px;
+    left: 435px;
+    width: 380px;
 }
+
 .me:hover {
     animation: wiggle 0.8s ease-in-out;
-    
 }
 
 .him {
     position: absolute;
-    bottom:30px;
-    right:30px;
-    width:170px;
+    bottom: 30px;
+    right: 30px;
+    width: 160px;
 }
+
 .him:hover {
     animation: bounce 0.5s linear;
     animation-iteration-count: 2;
@@ -135,26 +203,100 @@ section{
 
 .moreDog {
     position: absolute;
-    bottom:30px;
-    left:840px;
-    width:380px;
+    bottom: 30px;
+    left: 840px;
+    width: 380px;
 }
+
 .moreDog:hover {
     animation: threeSixty 1s linear;
 }
 
+.holyBody {
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+}
+
+.holyHeader {
+    background-color: rgb(96, 93, 93);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.holyMain {
+    display: flex;
+    flex: 1;
+}
+
+.holyNav {
+    background-color: #333;
+    padding-top: 3rem;
+    flex: 1;
+}
+
+.holyNav ul {
+    list-style-type: none;
+}
+
+.holyNav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-right: 60px;
+    transition: background-color 0.3s linear;
+    border-radius: 10px;
+}
+
+.holyNav li:hover {
+    background-color: rgb(91, 86, 86);
+}
+
+.holyNav .navLogo {
+    font-size: 34px;
+}
+
+
+.holyArticle {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex: 3;
+    color:black;
+    margin:20px;
+}
+
+.holyAside {
+    background-color: #333;
+    padding-top: 3rem;
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.holyFooter {
+    background-color: rgb(96, 93, 93);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 @media (max-width: 600px) {
     nav {
-        display:flex;
-        flex-direction: column;   
+        display: flex;
+        flex-direction: column;
     }
+
     ul {
         display: flex;
         flex-direction: column;
-        padding-right:120px;  
+        padding-right: 120px;
     }
+
     li {
-        padding-top:10px;
-        padding-bottom:10px;    
-    }   
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
