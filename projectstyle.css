@@ -43,14 +43,13 @@ section {
     background-color: lightgray;
     flex-direction: column;
     color: black;
-    padding: 30px;
 }
 
 .meme {
     position: absolute;
-    top: 270px;
+    top: 320px;
     right: 70px;
-
+    width: 450px;
 }
 
 .homeLogo {
@@ -120,23 +119,23 @@ section {
 
 @keyframes bounce {
     0% {
-        transform: scale(100%);
+        transform: scale(1,1);
     }
 
     25% {
-        transform: scale(105%);
+        transform: scale(1.1,1.1);
     }
 
     50% {
-        transform: scale(100%);
+        transform: scale(1,1);
     }
 
     75% {
-        transform: scale(95%);
+        transform: scale(0.9,0.9);
     }
 
     100% {
-        transform: scale(100%);
+        transform: scale(1,1);
     }
 }
 
@@ -259,7 +258,6 @@ section {
 .holyNav .navLogo {
     font-size: 34px;
 }
-
 
 .holyArticle {
     padding-top: 1rem;
