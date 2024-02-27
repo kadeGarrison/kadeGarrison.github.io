@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+
+        <p>
+            With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor
+            certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges
+            you face ahead.
+        </p>
+
+        <form id="pathForm" type="get" action="">
+            <label for="pathChoice">Choose your Path:</label>
+            <select name="pathChoice" id="pathChoice" onchange="selectedOption()">
+                <option value="">--Please choose an option--</option>
+                <option value="persuasion">Path of Persuasion</option>
+                <option value="stealth">Path of Stealth</option>
+                <option value="combat">Path of Combat</option>
+            </select>
+
+            <input type="submit" value="Continue on Your Journey">
+
+        </form>
+
+        <p>
+            Your choice will not only test your abilities but also reveal deeper truths about your character.
+        </p>
+    </section>
+    <script>
+
+        function selectedOption() {
+            var opt = document.getElementById("pathChoice").value;
+
+            if (opt === "stealth") {
+                pathForm.action = "page5b.html";
+                document.body.style.backgroundColor = "lightgrey";
+            } else if (opt === "") {
+                pathForm.action = "";
+                document.body.style.backgroundColor = "white";
+            } else if (opt === "persuasion") {
+                pathForm.action = "page6.html";
+                document.body.style.backgroundColor = "lightgreen";
+            } else {
+                pathForm.action = "page6.html";
+                document.body.style.backgroundColor = "red";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
