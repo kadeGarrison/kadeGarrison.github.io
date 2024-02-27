@@ -19,7 +19,7 @@
 
         <br><br>
 
-        <form id="firstObstacleForm" type="get" action="page5.html">
+        <form id="firstObstacleForm" type="get" action="">
             <label for="riddleAnswer">Your Answer:</label>
             <input id="riddleAnswer" type="text" name="riddleAnswer">
             <input id="submitButton" type="submit" value="Submit Answer" style ="color:white; background-color: red;">
@@ -35,9 +35,11 @@
             if (answerInput.value.toLowerCase() === correctAnswer.toLowerCase()) {
                 sButton.style.color = "white";
                 sButton.style.backgroundColor = "green";
+                pathForm.action = "page5.html";
             } else {
                 sButton.style.color = "white";
                 sButton.style.backgroundColor = "red";
+                pathForm.action = "";
             }
         }
         
